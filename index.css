@@ -1,0 +1,19 @@
+body{
+    margin:0;
+}
+.header{
+    text-align:center;
+    padding:10px;
+}
+.frames{
+    display: flex;
+    flex-wrap: wrap;
+    padding:5px;
+}
+.data{
+    padding-top:50px;
+    padding-left:70px;
+    padding-bottom: 30px;
+    text-align: center;
+
+}

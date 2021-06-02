@@ -1,0 +1,20 @@
+var t=document.getElementById("temp")
+var h=document.getElementById("hum")
+var m=document.getElementById("mois")
+
+setInterval(()=>{fetch("http://api.thingspeak.com/channels/1402888/feed.json")
+.then(response=>response.json())
+.then(data=>{
+   var alldata=data['feeds']
+   t.innerText=alldata[alldata.length-1]['field1']
+   h.innerText=alldata[alldata.length-1]['field2']
+   m.innerText=alldata[alldata.length-1]['field3']
+   if(parseInt(t.innerText)>30){
+       document.getElementById('warn').innerText="Temperature is high!!"
+   }
+   else{
+    document.getElementById('warn').innerText="Everything seems normal, sir!"
+   }
+})
+},10000)
+
