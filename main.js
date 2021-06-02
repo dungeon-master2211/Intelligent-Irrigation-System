@@ -18,3 +18,16 @@ setInterval(()=>{fetch("https://api.thingspeak.com/channels/1402888/feed.json")
 })
 },10000)
 
+function validator(){
+    var username=document.getElementById("username").value
+    var pwd=document.getElementById('password').value
+    var btn=document.getElementById('submit').innerHTML
+    if(username=='farm1' && pwd=='farm1'){
+        window.location.replace('./visual.html')
+    }
+    else{
+        
+        alert("Invalid Credentials")
+    }
+
+}
