@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Irrigation</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="herotitle">Intelligent Irrigation System</h1>
+            <a href="./index.html"><button class="btn btn-success">Back to Login</button></a>
+        </div>
+        <div class="frames">
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1402888/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1402888/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/1402888/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <div class="data">
+                <h2>Current Data</h2>
+                Temperature:
+                <label for="temperature" id="temp">Fetching value</label><br>
+                Humidity:
+                <label for="humidity" id="hum">Fetching value</label><br>
+                Moisture:
+                <label for="moisture" id="mois">Fetching value</label><br>
+                <label for="warning" id="warn"></label>
+            </div>
+        </div>
+        
+    </div>    
+</body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</html>
