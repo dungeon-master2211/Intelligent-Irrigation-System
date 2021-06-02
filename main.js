@@ -2,7 +2,7 @@ var t=document.getElementById("temp")
 var h=document.getElementById("hum")
 var m=document.getElementById("mois")
 
-setInterval(()=>{fetch("http://api.thingspeak.com/channels/1402888/feed.json")
+setInterval(()=>{fetch("https://api.thingspeak.com/channels/1402888/feed.json")
 .then(response=>response.json())
 .then(data=>{
    var alldata=data['feeds']
